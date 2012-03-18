@@ -27,5 +27,6 @@ all_ruby_unpack() {
 }
 
 all_ruby_install() {
+	all_fakegem_install
 	doman ${PN}.1
 }
