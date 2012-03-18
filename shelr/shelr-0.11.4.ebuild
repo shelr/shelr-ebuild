@@ -5,15 +5,13 @@
 EAPI=4
 USE_RUBY="ruby18"
 
-GITHUB_USER="antono"
-GITHUB_PROJECT="${PN}"
-RUBY_S="${GITHUB_USER}-${GITHUB_PROJECT}-*"
+RUBY_S="antono-${PN}-*"
 
 inherit ruby-fakegem
 
 DESCRIPTION="Console screencasting tool"
 HOMEPAGE="http://shelr.tv/"
-SRC_URI="https://github.com/${GITHUB_USER}/${GITHUB_PROJECT}/tarball/v${PV} -> ${GITHUB_PROJECT}-${PV}.tar.gz"
+SRC_URI="https://github.com/antono/${PN}/tarball/v${PV} -> ${PN}-${PV}.tar.gz"
 LICENSE="GPL-3"
 
 SLOT="0"
